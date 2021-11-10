@@ -1,0 +1,13 @@
+För godkänt ska ni göra följande:
+
+Ni måste skapa alla delar på hemsidan.
+Ni kan använda er av hjälp-bibliotek såsom Bootstrap och MDBootstrap.
+Ni ska ha hover animationer på länkar och knappar.
+Ni måste göra en mobile first design eller en desktop
+ first desgin och designa för mobile, tablets och desktops.
+Ni ska lägga till animationer så att olika stycken animeras in
+ med hjälp av css. Det kan vara animationer såsom att saker 
+och ting fadeas in eller slide dvs. åker in från höger eller vänster sida.
+Saker som ser ut att vara en karusell ska bli en karusell.
+ Ni kan göra en karusell eller flera karuseller på sidan om ni vill.
+ Det kan hända att ni behöver använda er av lite javascript för detta. 
