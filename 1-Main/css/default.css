@@ -30,8 +30,15 @@ html {
 .poppins {
   font-family: "Poppins", sans-serif;
 }
+P {
+  font-size: 0.9rem;
+}
 
 /* features section  Nchombua yvette*/
+
+#features {
+  background-color: rgb(238, 232, 232);
+}
 .features-intro button {
   color: var(--primary-color);
   background-color: #fff6d9;
@@ -60,4 +67,12 @@ html {
   border-radius: 50%;
   transform: translateY(5px);
   transition: all 0.1s ease-in;
+}
+
+.mobile img {
+  margin-left: -6rem;
+}
+
+.features-intro {
+  margin-right: -6rem;
 }
