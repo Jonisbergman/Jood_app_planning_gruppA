@@ -51,7 +51,11 @@ body, html {
 .downl-app .image {
   height: 30px;
 }
-
+.downl-app .phone-container {
+  height: 30rem;
+  width: 33rem;
+  overflow: hidden;
+}
 #email {
   background: #FBFBFB;
   border: transparent;
