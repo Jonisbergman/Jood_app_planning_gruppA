@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
 
-* {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,14 +8,14 @@
 html, body {
     font-family: 'Roboto';
 }
-
-
-#showcase .container {
-    width: 100%;
-    /* height: 900vh; */
-    /* background-color: rgb(34, 122, 255); */
+.container {
+    width: 80%;
+    margin: auto;
 }
+
 #showcase {
+    position: relative;
+    top: 0;
     background-image: url(img/Showcase.png);
     background-repeat: no-repeat;
     background-size: 120%;
@@ -31,59 +31,73 @@ html, body {
     margin-top: 0.2rem;
     font-size: 0.8rem;
 }
-a {
-  text-decoration: none;
-  font-weight: 600;
-  color: white;
-  margin-left: 1rem;
-}
-a:hover {
-    color: #FFBB00;
-    text-decoration: underline;
-}
-.btn-app {
-  padding: 0.5rem 2rem;
-  border: 1px solid transparent;
-  border-radius: 10px;
-  outline: none;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: 600;
-  font-size: 0.8rem;
-  background-color: #FFBB00;
-  color: white;
-  margin-left: 5vh;
-}
-.btn-download-now:hover {
-    background-color: #FFBB00;
-}
+
 .top-nav .container, .navbar .container {
     display: flex;
     justify-content: right;
     align-items: center;
-  }
-  .navbar {
+}
+.navbar {
     padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.link {
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    margin-left: 1rem;
+    padding: 1rem;
+    display: inline-block;
+    position: relative;
   }
-  .collapse:not(.show) {
+  .link.active:hover::after {
+      content: '';
+      border-bottom: 2px solid #FFBB00;
+      position: absolute;
+      left: 1rem;
+      right: 1.9rem;
+      bottom: 0.7rem;
+  }
+  .link:hover {
+      color: #FFBB00;
+  }
+  .btn-app {
+    padding: 0.6rem 2rem;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    /* outline: none; */
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    background-color: #FFBB00;
+    color: white;
+    margin-left: 5vh;
+  }
+  .btn-app:hover {
+      box-shadow: 3px 3px 15px rgba(51, 51, 51, 0.562), 3px 3px 15px rgba(51, 51, 51, 0.418);
+  }
+
+.collapse:not(.show) {
     display: none;
-  }
-  .navbar-brand img {
+}
+.navbar-brand img {
     height: 3rem;
-  }
-  .navbar-toggler {
+}
+.navbar-toggler {
     background-color: transparent;
     border: none;
     outline: none;
     font-size: 1rem;
     font-family: 'Roboto slab';
-    color: var(--primary-color)
-  }
-  .navbar-nav {
+    color: #FFBB00;
+}
+.navbar-nav {
     display: flex;
     flex-direction: column;
     list-style: none;
-  }
+}
 .showcase-content {
     display: flex;
     justify-content: space-between;
@@ -108,23 +122,29 @@ a:hover {
     font-size: 1.6vh;
     font-weight: normal;
     width: 80%;
-    letter-spacing: 0.2vh;
+    letter-spacing: 0.15vh;
     line-height: 3vh;
-    margin-bottom: -3vh;
+    margin-bottom: 3vh;
 }
 .showcase-content img {
     margin-right: -2rem;
     height: 80vh;
     margin-bottom: 8vh;
 }
+
+
 .buttons {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    /* align-items: center; */
     margin-bottom: 7vh;
 }
+/* .btn-2 {
+    display: grid;
+} */
 .btn-download-now {
-    padding: 0.8rem 2rem;
+    margin-right: 1rem;
+    padding: 0.6rem 2rem;
     border: 2px solid white;
     border-radius: 10px;
     outline: none;
@@ -135,11 +155,19 @@ a:hover {
     background-color: transparent;
     color: white;
 }
+.btn-download-now:hover {
+    border: 2px solid #FFBB00;
+    box-shadow: 3px 6px 15px #FFBB00;
+}
+
+.btn-2 {
+    display: inline-block;
+}
 .btn-watch-video {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 0.8rem 3rem;
+    padding: 0.2rem 3rem;
     border: 1px solid transparent;
     border-radius: 10px;
     outline: none;
@@ -148,17 +176,52 @@ a:hover {
     font-size: 1rem;
     background-color: transparent;
     color: white;
-}
-.btn-watch-video img {
-   height: 55px; 
-   margin-bottom: -1px;
-   margin-right: 2vh;
-   /* margin-right: 3rem; */
-}
+    }
+/* .btn-watch-video:hover {
+        text-shadow: 6px 6px 15px #000000;
+    } */
+    .ball {
+        display: inline-block;
+        background-color: #FFBB00;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        transform: translate(-35%, -5%);
+        /* margin-bottom: 0.5rem;
+        margin-top: 2rem; */
+        border: none;
+    }
+    #video {
+        height: 20px; 
+        transform: translate(-70%, 65%);
+     }
+    .btn-watch-video:hover .ball {
+        /* background-color: var(--primary-color); */
+    background-color: #FFBB00;
+    width: 45px;
+    height: 45px;
+    left: -7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    /* border: 3px rgb(150, 40, 40) solid; */
+    outline: 1.5px solid peachpuff;
+    outline-offset: 5px;
+    }
 .btn-watch-video:hover img {
-    size: 5%;
+    display: none;
+}
+.btn-watch-video:hover {
+    font-size: 120%;
+    text-shadow: 3px 6px 10px #333;
+    font-variant-caps: all-small-caps;
 }
 
+.logo {
+    height: 5rem;
+    background-image: url(img/ec-logo-mono.png);
+}
 
 
 
