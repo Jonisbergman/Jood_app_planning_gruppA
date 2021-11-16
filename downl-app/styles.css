@@ -63,6 +63,9 @@ body, html {
   font-family: 'Roboto';
   font-weight: bold;
 }
+.downl-app .content :hover{
+  animation: flipV 1s linear;
+}
 .downl-app .image {
   height: 30px;
 }
@@ -97,6 +100,12 @@ body, html {
     width: 10rem;
     border-radius: 10px;
     font-size: 16px;
+    background-color:#3096FE !important;
+    border: 1px transparent;
   }
-
+  @keyframes flipV{
+    50% {
+      transform: rotate(360deg);
+    }
+  }   
    
