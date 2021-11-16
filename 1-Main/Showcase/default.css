@@ -217,10 +217,20 @@ html, body {
     text-shadow: 3px 6px 10px #333;
     font-variant-caps: all-small-caps;
 }
+/*SHOWCASE END*/
 
+
+/*LOGO BAR*/
 .logo {
-    height: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5rem 0rem;
+
+    /* object-fit: repeat; */
+    /* height: 5vh;
     background-image: url(img/ec-logo-mono.png);
+    background-repeat: space;  */
 }
 
 
@@ -244,3 +254,71 @@ html, body {
       display: block;
     }
   }
+
+
+  
+  /*JESSICAS*/
+  /* DOWNLOAD-APPLICATION */
+
+.downl-app {
+    background-image: url("img/Bg.svg");
+}
+.downl-app .content{
+   margin: 0 auto;
+}
+.downl-app .btn {
+  display: flex;
+  justify-content:space-between; 
+  width: 14rem;
+  height: 4.5rem;
+  border: 1px transparent;
+  border-radius: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  justify-self: center;
+  background-color: #fff;
+  cursor: pointer;
+}
+.downl-app .btn p {
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: normal;
+  padding-top: 1rem;  
+  padding-left: 1.5rem;
+  text-align: left;
+}
+.downl-app .btn span{
+  font-size: 22px;
+  font-family: Roboto;
+  font-weight: bold;
+}
+.downl-app .image {
+  height: 30px;
+}
+.downl-app .phone-container {
+  height: 30rem;
+  width: 33rem;
+  overflow: hidden;
+}
+#email {
+  background: #FBFBFB;
+  border: transparent;
+  font-size: 16px;
+ }
+#name {
+    background: #FBFBFB;
+    border: transparent;
+    font-size: 16px;
+}
+#message {
+    background: #FBFBFB;
+    border: transparent;
+    font-size: 16px;
+}
+
+.contact-us .btn {
+    width: 10rem;
+    border-radius: 10px;
+    font-size: 16px;
+   
+}
