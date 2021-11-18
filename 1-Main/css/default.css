@@ -17,7 +17,7 @@ body, html {
   
   /* DOWNLOAD-APPLICATION Av Jessica Vakkuri*/ 
   .downl-app {
-    background: url("img/Bg.svg");
+    background: url("../img/Bg.svg");
     background-repeat: no-repeat;
     background-size: cover;
   }
