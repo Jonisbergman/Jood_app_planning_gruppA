@@ -15,32 +15,23 @@ body, html {
   padding: 0 1rem;
 } 
 
-/* DOWNLOAD-APPLICATION */
-
-.downl-app h1, .contact-us h1 {
-  font-family: 'Roboto' !important;
-  font-size: 45px;
-  font-weight: bold;
-}
-.downl-app p {
-  font-family: 'Roboto' !important;
-}
+/* DOWNLOAD-APPLICATION Av Jessica Vakkuri*/ 
 .downl-app {
   background: url("img/Bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
-.downl-app .row{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.downl-app h1, .contact-us h1 {
+    font-size: 45px;
+    font-family: 'Roboto' !important;
+}
+.downl-app .about-us p {
+  font-family: 'Roboto' !important;
 }
 
-.downl-app .content{
-   margin: 0 auto;
-   
-}
-.downl-app .btn {  justify-content:space-between; 
+
+.downl-app .btn {  
+  justify-content:space-between; 
   width: 14rem;
   height: 4.5rem;
   border: 1px transparent;
@@ -51,8 +42,8 @@ body, html {
   cursor: pointer;
 }
 .downl-app .btn p {
-  font-size: 12px;
-  font-family: 'Roboto';
+  font-size: 0.75em;
+  font-family: 'Roboto'!important;
   font-weight: normal;
   padding-top: 1rem;  
   padding-left: 1.5rem;
@@ -65,6 +56,7 @@ body, html {
 }
 .downl-app .content :hover{
   animation: flipV 1s linear;
+
 }
 .downl-app .image {
   height: 30px;
@@ -77,23 +69,22 @@ body, html {
 .phone-image {
   height: 35rem;
   width: 28rem;
-  margin-left: 3rem ;
-  
-}
-#email {
-  background: #FBFBFB;
-  border: transparent;
-  font-size: 16px;
+  margin-left: 3rem;
  }
-#name {
-    background: #FBFBFB;
-    border: transparent;
-    font-size: 16px;
-}
+ /* Contact-us start Av Jessica Vakkuri*/
+#email, #name{
+  background: #FBFBFB;
+  height: 3.5rem;
+  font-size: 16px;
+  border: transparent;
+  border-radius: 10px;
+  }
+
 #message {
-    background: #FBFBFB;
-    border: transparent;
-    font-size: 16px;
+  background: #FBFBFB;
+  font-size: 16px;
+  border: transparent;
+  border-radius: 10px;
 }
 
 .contact-us .btn {
@@ -103,9 +94,79 @@ body, html {
     background-color:#3096FE !important;
     border: 1px transparent;
   }
-  @keyframes flipV{
-    100% {
-      transform: rotate(360deg);
+/* About-us animation på knapp */
+@keyframes flipV{
+  100% {
+    transform: rotate(360deg);
+  }
+}   
+
+.rubrik {
+  top: 2%;
+  right: 0%;
+  font-size: 30px;
+  text-align: center;
+}
+.rubrik {
+  -webkit-transition: letter-spacing 2s ease-out, margin-right 2s ease-out;
+  transition: letter-spacing 2s ease-out, margin-right 2s ease-out;
+  display:block;
+  margin-right:0px;
+  letter-spacing: 0;
+}
+.rubrik:hover {
+  letter-spacing: 0px;
+  margin-right:20px;
+  letter-spacing: 20px;
+}
+.rubrik span{
+   letter-spacing: 0;
+}
+/* Contact-us end*/
+
+
+@media (min-width: 578px) {
+  .container {
+    max-width: 530px;
+  }
+  .downl-app .container{
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .downl-app .row{
+    text-align: center;
+  }
+}
+/* media querie between  */
+
+@media (min-width: 800px) {
+  .container {
+    max-width: 790px;
+  }
+  .downl-app .row{
+    text-align: center;
     }
-  }   
+  .downl-app .phone-image{
+    height: 30rem;
+  }
+  .downl-app .btn p{
+   font-size: ;
+  }
+}
+ 
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}  
    
