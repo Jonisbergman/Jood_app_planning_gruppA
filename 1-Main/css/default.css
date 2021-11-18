@@ -22,7 +22,7 @@ body, html {
     background-size: cover;
   }
   .downl-app h1, .contact-us h1 {
-      font-size: 45px;
+      font-size: 40px;
       font-family: 'Roboto' !important;
   }
   .downl-app .about-us p {
@@ -148,12 +148,7 @@ body, html {
     .container {
       max-width: 790px;
     }
-    .downl-app .row{
-      text-align: center;
-      }
-    .downl-app .phone-image{
-      height: 30rem;
-    }
+    
   }
    
   @media (min-width: 992px) {
