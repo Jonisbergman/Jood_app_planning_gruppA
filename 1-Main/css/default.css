@@ -28,8 +28,6 @@ body, html {
   .downl-app .about-us p {
     font-family: 'Roboto' !important;
   }
-  
-  
   .downl-app .btn {  
     justify-content:space-between; 
     width: 14rem;
@@ -56,7 +54,6 @@ body, html {
   }
   .downl-app .content :hover{
     animation: flipV 1s linear;
-  
   }
   .downl-app .image {
     height: 30px;
@@ -66,13 +63,16 @@ body, html {
     width: 33rem;
     overflow: hidden;
   }
-  .phone-image {
-    height: 35rem;
-    width: 28rem;
-    margin-left: 3rem;
-   }
-   /* Contact-us start Av Jessica Vakkuri*/
-  #email, #name{
+  /* downl-app animation på knapp */
+   @keyframes flipV{
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+/* downl-app END */
+
+  /* Contact-us start Av Jessica Vakkuri*/
+ .contact-us #email, #name{
     background: #FBFBFB;
     height: 3.5rem;
     font-size: 16px;
@@ -80,7 +80,7 @@ body, html {
     border-radius: 10px;
     }
   
-  #message {
+  .contact-us #message {
     background: #FBFBFB;
     font-size: 16px;
     border: transparent;
@@ -94,32 +94,27 @@ body, html {
       background-color:#3096FE !important;
       border: 1px transparent;
     }
-  /* About-us animation på knapp */
-  @keyframes flipV{
-    100% {
-      transform: rotate(360deg);
-    }
-  }   
-  
-  .rubrik {
+    
+  /* Contact-us animation på rubrik  */
+  .contact-us .rubrik {
     top: 2%;
     right: 0%;
     font-size: 30px;
     text-align: center;
   }
-  .rubrik {
+  .contact-us .rubrik {
     -webkit-transition: letter-spacing 2s ease-out, margin-right 2s ease-out;
     transition: letter-spacing 2s ease-out, margin-right 2s ease-out;
     display:block;
     margin-right:0px;
     letter-spacing: 0;
   }
-  .rubrik:hover {
+  .contact-us .rubrik:hover {
     letter-spacing: 0px;
     margin-right:20px;
     letter-spacing: 20px;
   }
-  .rubrik span{
+  .contact-us .rubrik span{
      letter-spacing: 0;
   }
   /* Contact-us end*/
@@ -160,4 +155,5 @@ body, html {
     .container {
       max-width: 1140px;
     }
+    
   }
