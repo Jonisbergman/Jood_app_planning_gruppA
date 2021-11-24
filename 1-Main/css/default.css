@@ -38,12 +38,13 @@ P {
 /* features section  Nchombua yvette*/
 
 #features {
-  background-color: #fcfcfc;
+  background: url("../assets/Rectangle\ 1907.png");
   padding-top: 4rem;
 }
 
 #features .container {
-  background: url(../assets/Repeat\ Grid\ 1.png) no-repeat center;
+  background: url(../assets/Repeat\ Grid\ 1.png) no-repeat center center/
+    contain;
   background-size: calc(100% - 20px);
   max-width: 80%;
 }
@@ -143,9 +144,6 @@ footer ul li :hover {
   display: flex;
   justify-content: center;
   align-content: center;
-
-  /* background-color: red;
-  height: 20px; */
 }
 
 .social-media-icons a {
@@ -170,4 +168,69 @@ footer ul li :hover {
 .social-media-icons a img:hover {
   background-color: var(--primary-color);
   border-radius: 50%;
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 530px;
+    height: 100%;
+  }
+  .mobile {
+    display: none;
+  }
+
+  .features-intro button {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .features-intro h1 {
+    font-size: 1.6rem;
+  }
+
+  .features-icons {
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px var(--bg-primary);
+    padding: 1rem;
+  }
+
+  .features-icons a img {
+    /* margin:-1rem 0 0.5rem 0 ; */
+    margin-bottom: 0.5rem;
+  }
+
+  footer {
+    padding: 0 0 2rem 0;
+  }
+
+  footer ul {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  .mobile img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+  }
+
+  #features .container {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  footer {
+    padding: 0 0 22rem 0;
+  }
+}
+
+@media (min-width) {
+  .container {
+    max-width: 960px;
+  }
 }
